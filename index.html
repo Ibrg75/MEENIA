@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meenia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="banner">
+        <div class="top-bar">
+            <img src="meenia.png" alt="Logo Meenia" class="logo">
+            <nav>
+              
+              <button class="nav-btn">Accueil</button>
+                <button class="nav-btn">Caftan</button>
+                <button class="nav-btn">Brocard</button>
+                <button class="nav-btn">Bijoux</button>
+                <button class="nav-btn">Nouveaux</button>
+                <button class="nav-btn">Contact</button>
+            </nav>
+            <fieldset class="search-fieldset">
+                <input type="search" placeholder="Recherchez" class="search-input">
+                <div class="search-autocomplete">
+                    <span id="searchAutocompleteSearchedTerm"></span>
+                    <span id="searchAutocompleteEnding"></span>
+                </div>
+                <button type="button" class="search-submit">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="8" stroke="#333" stroke-width="2"/>
+                        <path d="M21 21L16.5 16.5" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </fieldset>
+        </div>
+    </header>
+    <main>
+        <section id="accueil-section" class="content-section" style="display: none;">
+            <div class="content-container">
+                <h2>Bienvenue chez Meenia</h2>
+                <p>Découvrez notre collection de caftans, brocards et bijoux uniques pour sublimer votre beauté.</p>
+                <p>Myriam & Donia vous accueillent avec passion et bienveillance.</p>
+            </div>
+        <section class="hero">
+        </section>
+
+       
+    
+        <section id="nouveaux-section" class="content-section" style="display: none;">
+            <div class="content-container">
+                <h2>Nouveaux Arrivages</h2>
+                <div id="product-gallery" class="product-gallery">
+                    <div class="product-item">
+                        <img src="23.jpg" alt="Etiquette personalisées" onclick="openModal('23.jpg')">
+                        <p>Description du produit 1</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="24.jpg" alt="Nouveau produit 2" onclick="openModal('24.jpg')">
+                        <p>Description du produit 2</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="25.jpg" alt="Nouveau produit 3" onclick="openModal('25.jpg')">
+                        <p>Description du produit 3</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="26.jpg" alt="Carte de visite" onclick="openModal('26.jpg')">
+                        <p>Description du produit 3</p>
+                    </div>
+                </div>
+            </div>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+        </section>
+    
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
